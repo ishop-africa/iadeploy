@@ -25,9 +25,8 @@ jobs:
       - name: Test Application
         run: |
           mkdir -p /tmp/test
+          cp . /tmp/test
           cd /tmp/test
-          git clone git@github.com:ishop-africa/iadeploy.git deploy
-          cd deploy
           ./init.sh
           cat test.json
           rm -rf /tmp/test
