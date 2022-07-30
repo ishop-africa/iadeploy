@@ -1,6 +1,6 @@
 # Auto Deploy Configurations
 
-<a href="https://github.com/ishop-africa/iaadeploy.git"><img src="" alt=""></a>
+<a href="https://github.com/ishop-africa/iadeploy.git"><img src="" alt=""></a>
 
 ![CI](https://github.com/ishop-africa/iadevelop/workflows/CI/badge.svg)
 
