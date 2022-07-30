@@ -12,7 +12,7 @@ sed -i "s/{id}/$idProd/g" prod.json # Chage user name to empty string
 sed -i "s/{user}/$host_user/g" test.json # Chage user name to empty string
 sed -i "s/{app}/$app/g" test.json # Chage user name to empty string
 secretTest=$(openssl rand -base64 32)
-sed -i "s/{your-secrets-here}/$secretTest/g" test.json # Chage user name to empty string
+sed -i "s/echo-secrets/$secretTest/g" test.json # Chage user name to empty string
 idTest=$(openssl rand -base64 12)
 sed -i "s/{id}/$idTest/g" test.json # Chage user name to empty string
 
