@@ -8,7 +8,7 @@
           {
             "match": {
               "type": "payload-hash-sha1",
-              "secret": "{your-secrets-here}",
+              "secret": "echo-secrets",
               "parameter": {
                 "source": "header",
                 "name": "X-Hub-Signature"
