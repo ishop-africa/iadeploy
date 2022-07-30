@@ -1,2 +1,1 @@
-# Auto Deploy
-
+# Auto Deploy Configurations
