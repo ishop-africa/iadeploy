@@ -1,14 +1,14 @@
 [
     {
       "id": "{id}",
-      "execute-command": "/home/{user}/server/{app}/deploydeploy.sh TEST",
+      "execute-command": "/home/{user}/server/{app}/deploy/deploy.sh TEST",
       "command-working-directory": "/home/{user}/server/{app}/test/source",
       "trigger-rule": {
         "and": [
           {
             "match": {
               "type": "payload-hash-sha1",
-              "secret": "{secret}",
+              "secret": "{your-secrets-here}",
               "parameter": {
                 "source": "header",
                 "name": "X-Hub-Signature"
