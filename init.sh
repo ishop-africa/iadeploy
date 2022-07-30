@@ -14,5 +14,5 @@ sed -i "s/{app}/$app/g" test.json # Chage user name to empty string
 sed -i "s/{secret}/$secret/g" test.json # Chage user name to empty string
 sed -i "s/{id}/$id/g" test.json # Chage user name to empty string
 
-echo "use this secret on your repository webhook setings \n: $secret"
+echo "use this secret on your repository webhook setings: $secret"
 echo "your config sectings {id: $id, secret: $secret}"
