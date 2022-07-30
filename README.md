@@ -2,7 +2,7 @@
 
 <a href="https://github.com/ishop-africa/iadeploy.git"><img src="" alt=""></a>
 
-![CI](https://github.com/ishop-africa/iadevelop/workflows/CI/badge.svg)
+![CI](https://github.com/ishop-africa/iadeploy/workflows/CI/badge.svg)
 
 You ned to provide the name of the application to be deployed 
 
