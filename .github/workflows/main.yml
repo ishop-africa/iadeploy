@@ -1,0 +1,36 @@
+name: Deployer CI
+on:
+  push:
+    branches:
+      - main
+  pull_request_review:
+    branches:
+      - main  
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 1 * 1"
+
+jobs:
+  build:
+    name: Test Application
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Creation of files
+        uses: actions/checkout@v2
+        with:
+          path: .
+          message: "Test creation of files"
+      - name: Test Application
+        run: |
+          mkdir -p /tmp/test
+          cd /tmp/test
+          git clone git@github.com:ishop-africa/iadeploy.git deploy
+          cd deploy
+          ./init.sh
+          cat test.json
+          rm -rf /tmp/test
+          echo completed the test
+
+      
