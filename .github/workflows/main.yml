@@ -25,7 +25,8 @@ jobs:
       - name: Test Application
         run: |
           mkdir -p /tmp/test
-          cp . /tmp/test
+          ls -a
+          cp . -r /tmp/test
           cd /tmp/test
           ./init.sh
           cat test.json
