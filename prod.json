@@ -1,0 +1,31 @@
+[
+    {
+      "id": "{id}",
+      "execute-command": "/home/{user}/server/{app}/deploy/deploy.sh PROD",
+      "command-working-directory": "/home/{user}/server/{app}/prod/source",
+      "trigger-rule": {
+        "and": [
+          {
+            "match": {
+              "type": "payload-hash-sha1",
+              "secret": "{secret}",
+              "parameter": {
+                "source": "header",
+                "name": "X-Hub-Signature"
+              }
+            }
+          },
+          {
+            "match": {
+              "type": "value",
+              "value": "refs/heads/main",
+              "parameter": {
+                "source": "payload",
+                "name": "ref"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
