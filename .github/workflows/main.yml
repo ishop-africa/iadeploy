@@ -15,7 +15,7 @@ on:
 jobs:
   build:
     name: Test Application
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Test Creation of files
         uses: actions/checkout@v2
